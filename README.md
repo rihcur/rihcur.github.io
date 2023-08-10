@@ -1,3 +1,3 @@
 # rihcur.github.io
 # My Github: github.com/rihcur
-My wesbite.
+My website.
