@@ -19,6 +19,7 @@
 
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <div class="author-name">{{ site.author.name }}</div>
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
