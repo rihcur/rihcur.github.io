@@ -1,6 +1,23 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+remote_theme: pages-themes/minimal@v0.2.0
 theme: jekyll-theme-minimal
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
+
+title: Ruchir Ravishankar
+description: Recent Master's Graduate in Aerospace Engineering looking for entry-level full-time roles.
+show_downloads: False
+google_analytics:
+
+# Site Author
+author: 
+  Name      : "Ruchir Ravishankar"
+  email     : "ravishankarruchir@gmail.com"
+  resume    : #"assets/files/CV_Ayaaz_Yasin.pdf"
+  github    : "https://www.github.com/rihcur"
+  linkedin  : "https://www.linkedin.com/in/rihcur"
+
+github: [metadata]
+  
+
+
