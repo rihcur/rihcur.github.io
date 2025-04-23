@@ -1,24 +1,23 @@
-remote_theme: pages-themes/minimal@v0.2.0
+title: Ruchir Ravishankar
+logo: /assets/img/ruchir.jpg
+description: Recent Master's Graduate in Aerospace Engineering<br>Seeking Full-time/Internship Opportunities
+show_downloads: false
+google_analytics:
 theme: jekyll-theme-minimal
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
-
-title             : Ruchir Ravishankar
-logo              : /assets/img/ruchir.jpg
-description       : Recent Master's Graduate in Aerospace Engineering looking for entry-level full-time roles.
-show_downloads    : False
-google_analytics  : 
-
 # Site Author
-author: 
-  Name      : "Ruchir Ravishankar"
-  email     : "ravishankarruchir@gmail.com"
-  resume    : "assets/files/RuchirRavishankar_resume.pdf"
-  github    : "https://www.github.com/rihcur"
-  linkedin  : "https://www.linkedin.com/in/rihcur"
+author:
+  name             : "Ruchir Ravishankar"
+  location         : Pale Blue Dot
+  email            : "ravishankarruchir@gmail.com"
+  cv               : "assets/files/RuchirRavishankar_resume.pdf"
+  googlescholar    : #
+  github           : "https://github.com/rihcur"
+  linkedin         : "https://www.linkedin.com/in/rihcur/"
+  orcid            : #"https://orcid.org/0009-0000-2258-8827"
+  ucresearchdirectory: #"https://researchdirectory.uc.edu/p/yasinaz"
 
 github: [metadata]
-  
-
-
