@@ -11,8 +11,8 @@ plugins:
 # Site Author
 author:
   name             : "Ruchir Ravishankar"
-  location         : "Pale Blue Dot"
-  email            : "ravishankarruchir@gmail.com"
+  location         : #"Pale Blue Dot"
+  email            : "[ravishankarruchir@gmail.com](mailto:ravishankarruchir@gmail.com)"
   cv               : "assets/files/RuchirRavishankar_resume.pdf"
   googlescholar    : #
   github           : "https://github.com/rihcur"
