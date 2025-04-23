@@ -46,8 +46,12 @@
           {% endif %}
         </p>
 
-       <!-- <p class="center_txt"><a href="#about" target="_self">About Me</a> | <a href="#news" target="_self">News</a> | <a href="#Projects" target="_self">Projects</a></p>-->
+       <p class="center_txt"><a href="#about" target="_self">About Me</a> | <!--<a href="#news" target="_self">News</a>-->| <a href="#Projects" target="_self">Projects</a></p>
 
+        {% if site.author.email %}
+          <p class="center_txt"><a href="{{ site.author.email }}" target="_blank">ravishakarruchir@gmail.com</a></p>
+        {% endif %}
+        
         {% if site.author.cv %}
           <p class="center_txt"><a href="{{ site.author.cv }}" target="_blank">Here's my Resume</a></p>
         {% endif %}
