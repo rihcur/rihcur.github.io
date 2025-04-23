@@ -4,32 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/academicons.min.css"/>
+    <link rel="stylesheet" href="/assets/css/custom.css"/>
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
     {% include head-custom.html %}
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-          <div class="author-name">{{ site.author.name }}</div>
+          <img class="center_img" style="padding-bottom: 22px; max-width: 70%" src="{{site.logo | relative_url}}" alt="headshot" />
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <h1 class="center_txt less_space"><a href="{{ "/" | absolute_url }}" class="title_color">{{ site.title | default: site.github.repository_name }}</a></h1>
 
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+        <p class="center_txt less_space" >{{ site.description | default: site.github.project_tagline }}</p>
+
+        {% if site.author.location %}
+          <p class="center_txt less_space" style="white-space: break-spaces;"><i class="fa fa-fw fa-map-marker icon" aria-hidden="true"></i> {{ site.author.location }}</p>
         {% endif %}
 
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        {% if site.author.email %}
+          <p class="center_txt less_space">{{ site.author.email }}</p>
+        {% endif %}
+
+        <p class="center_txt less_space">
+          {% if site.author.googlescholar %}
+            <a href="{{ site.author.googlescholar }}" target="_blank"><i class="ai ai-google-scholar ai-fw ai-2x icon_color"></i></a>
+          {% endif %}
+          {% if site.author.linkedin %}
+            <a href="{{ site.author.linkedin }}" target="_blank"><i class="fab fa-fw fa-linkedin ai-2x icon_color" aria-hidden="true"></i></a>
+          {% endif %}
+          {% if site.author.github %}
+            <a href="{{ site.author.github }}" target="_blank"><i class="fab fa-fw fa-github ai-2x icon_color" aria-hidden="true"></i></a>
+          {% endif %}
+          {% if site.author.orcid %}
+            <a href="{{ site.author.orcid }}" target="_blank"><i class="ai ai-orcid-square ai-fw ai-2x icon_color" aria-hidden="true"></i></a>
+          {% endif %}
+        </p>
+
+        <p class="center_txt"><a href="#about" target="_self">About Me</a> | <a href="#news" target="_self">News</a> | <a href="#publications" target="_self">Publications</a></p>
+
+        {% if site.author.cv %}
+          <p class="center_txt"><a href="{{ site.author.cv }}" target="_blank">Download my CV</a></p>
         {% endif %}
 
         {% if site.show_downloads %}
@@ -39,6 +59,7 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
+
       </header>
       <section>
 
@@ -46,12 +67,3 @@
 
       </section>
       <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-  </body>
-</html>
