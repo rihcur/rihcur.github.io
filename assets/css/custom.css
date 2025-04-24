@@ -1,0 +1,68 @@
+  .link_grey {
+    color:#00546b;
+  }
+  
+  .smaller_font {
+    font-size: .75em;
+  }
+
+  .column_left {
+    float: left;
+    width: 65%;
+  }
+  
+  .column_right { 
+    width: 35%;
+    float: right;
+  }
+  
+  .column_full {
+    width: 100%;
+    float: left;
+  }
+  
+  .icon_large {
+    font-size: 200%;
+  }
+
+  .icon_color {
+    color:#727272;
+  }
+
+  .icon_color:hover {
+    color:#069;
+  }
+
+  .title_color {
+    color:#000;
+  }
+
+  .center_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .center_txt {
+    text-align: center;
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 925px) {
+    .column_left {
+      width: 100%;
+      float: left;
+    }
+    .column_right {
+      width: 100%;
+      float: left;
+    }
+    .column_full {
+      width: 100%;
+      float: left;
+    }
+  }
+
+  .less_space {
+    margin: 0 0 10px;
+  }
