@@ -12,7 +12,7 @@ plugins:
 author:
   name             : "Ruchir Ravishankar"
   location         : #"Pale Blue Dot"
-  email            : "mailto:ravishankarruchir@gmail.com"
+  email            : "ravishankarruchir@gmail.com"
   cv               : "assets/files/RuchirRavishankar_resume.pdf"
   googlescholar    : #
   github           : "https://github.com/rihcur"
