@@ -1,4 +1,7 @@
-
+---
+layout: default
+title: "Ruchir Ravishankar"
+---
 <!--[Projects](./another-page.html).-->
 
 # About Me
