@@ -21,39 +21,35 @@
 
         <h1 class="center_txt less_space"><a href="{{ "/" | absolute_url }}" class="title_color">{{ site.title | default: site.github.repository_name }}</a></h1>
 
-        <p class="center_txt less_space" >{{ site.description | default: site.github.project_tagline }}</p>
+        <p class="center_txt less_space" >{{ site.description | default: site.github.project_tagline }}{% if site.tagline %}<br>{{ site.tagline }}{% endif %}</p>
 
         {% if site.author.location %}
-          <p class="center_txt less_space" style="white-space: break-spaces;"><i class="fa fa-fw fa-map-marker icon" aria-hidden="true"></i> {{ site.author.location }}</p>
-        {% endif %}
-
-        {% if site.author.email %}
-          <p class="center_txt less_space">{{ site.author.email }}</p>
+          <p class="center_txt less_space" style="white-space: break-spaces;"><i class="fas fa-fw fa-map-marker-alt icon" aria-hidden="true"></i> {{ site.author.location }}</p>
         {% endif %}
 
         <p class="center_txt less_space">
           {% if site.author.googlescholar %}
-            <a href="{{ site.author.googlescholar }}" target="_blank"><i class="ai ai-google-scholar ai-fw ai-2x icon_color"></i></a>
+            <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar ai-fw ai-2x icon_color" aria-hidden="true"></i></a>
           {% endif %}
           {% if site.author.linkedin %}
-            <a href="{{ site.author.linkedin }}" target="_blank"><i class="fab fa-fw fa-linkedin ai-2x icon_color" aria-hidden="true"></i></a>
+            <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-fw fa-linkedin ai-2x icon_color" aria-hidden="true"></i></a>
           {% endif %}
           {% if site.author.github %}
-            <a href="{{ site.author.github }}" target="_blank"><i class="fab fa-fw fa-github ai-2x icon_color" aria-hidden="true"></i></a>
+            <a href="{{ site.author.github }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-fw fa-github ai-2x icon_color" aria-hidden="true"></i></a>
           {% endif %}
           {% if site.author.orcid %}
-            <a href="{{ site.author.orcid }}" target="_blank"><i class="ai ai-orcid-square ai-fw ai-2x icon_color" aria-hidden="true"></i></a>
+            <a href="{{ site.author.orcid }}" target="_blank" rel="noopener" aria-label="ORCID"><i class="ai ai-orcid-square ai-fw ai-2x icon_color" aria-hidden="true"></i></a>
           {% endif %}
         </p>
 
-       <p class="center_txt"><a href="#about" target="_self">About Me</a> | <!--<a href="#news" target="_self">News</a>--><a href="#Projects" target="_self">Projects</a></p>
+       <p class="center_txt"><a href="#about-me" target="_self">About Me</a><!-- | <a href="#news" target="_self">News</a> | <a href="#projects" target="_self">Projects</a>--></p>
 
         {% if site.author.email %}
-          <p class="center_txt"><a href="mailto:{{ site.author.email }}" target="_blank">ravishankarruchir@gmail.com</a></p>
+          <p class="center_txt"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
         {% endif %}
-        
+
         {% if site.author.cv %}
-          <p class="center_txt"><a href="{{ site.author.cv }}" target="_blank">Here's my Resume</a></p>
+          <p class="center_txt"><a href="{{ site.author.cv | relative_url }}" target="_blank" rel="noopener">Here's my Resume</a></p>
         {% endif %}
 
         {% if site.show_downloads %}
@@ -71,3 +67,9 @@
 
       </section>
       <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
